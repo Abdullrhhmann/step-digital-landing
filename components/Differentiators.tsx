@@ -61,7 +61,7 @@ const Differentiators = () => {
             What Makes Us <span className="text-gradient">Different</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            We're not just another digital agency. We're your growth partner.
+            We&apos;re not just another digital agency. We&apos;re your growth partner.
           </p>
         </motion.div>
 

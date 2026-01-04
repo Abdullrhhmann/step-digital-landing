@@ -66,7 +66,7 @@ const Header = () => {
             transition={{ duration: 0.5 }}
             className="flex-shrink-0"
           >
-            <a href="#home" className="flex items-center space-x-2">
+            <a href="#home" className="flex items-center space-x-2" aria-label="STEP Digital home">
               <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-xl">S</span>
               </div>

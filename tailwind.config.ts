@@ -48,6 +48,12 @@ const config: Config = {
       backdropBlur: {
         xs: "2px",
       },
+      transformStyle: {
+        "preserve-3d": "preserve-3d",
+      },
+      perspective: {
+        "1000": "1000px",
+      },
       animation: {
         "fade-in": "fadeIn 0.6s ease-out",
         "slide-up": "slideUp 0.6s ease-out",

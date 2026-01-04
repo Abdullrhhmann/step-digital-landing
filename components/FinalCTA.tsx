@@ -52,7 +52,10 @@ const FinalCTA = () => {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            <button className="px-10 py-5 bg-accent text-primary-dark text-xl font-bold rounded-lg hover:bg-accent-dark hover:shadow-glow-lg transform hover:scale-105 transition-all duration-300 mb-12">
+            <button 
+              className="px-10 py-5 bg-accent text-primary-dark text-xl font-bold rounded-lg hover:bg-accent-dark hover:shadow-glow-lg transform hover:scale-105 transition-all duration-300 mb-12"
+              aria-label="Get started with a free consultation"
+            >
               Get Started Now
             </button>
           </motion.div>

@@ -52,7 +52,7 @@ const Industries = () => {
             Industry <span className="text-gradient">Solutions</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Specialized expertise for your industry's unique challenges
+            Specialized expertise for your industry&apos;s unique challenges
           </p>
         </motion.div>
 

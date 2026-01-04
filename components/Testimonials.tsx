@@ -49,7 +49,7 @@ const Testimonials = () => {
             What Our <span className="text-gradient">Clients Say</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Don't just take our word for it - hear from our satisfied clients
+            Don&apos;t just take our word for it - hear from our satisfied clients
           </p>
         </motion.div>
 
@@ -78,7 +78,7 @@ const Testimonials = () => {
 
               {/* Quote */}
               <p className="text-gray-700 text-lg leading-relaxed mb-6 italic">
-                "{testimonial.quote}"
+                &ldquo;{testimonial.quote}&rdquo;
               </p>
 
               {/* Client Info */}

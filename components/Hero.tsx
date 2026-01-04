@@ -95,7 +95,10 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            <button className="px-8 py-4 bg-accent text-primary-dark text-lg font-bold rounded-lg hover:bg-accent-dark hover:shadow-glow transform hover:scale-105 transition-all duration-300">
+            <button 
+              className="px-8 py-4 bg-accent text-primary-dark text-lg font-bold rounded-lg hover:bg-accent-dark hover:shadow-glow transform hover:scale-105 transition-all duration-300"
+              aria-label="Get started with STEP Digital services"
+            >
               Get Started
             </button>
           </motion.div>
