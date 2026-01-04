@@ -58,13 +58,13 @@ const Header = () => {
       }`}
     >
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 lg:h-20">
+        <div className="flex items-center justify-between lg:justify-center h-16 lg:h-20 relative">
           {/* Logo */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
-            className="flex-shrink-0"
+            className="flex-shrink-0 lg:absolute lg:left-0"
           >
             <a href="#home" className="flex items-center space-x-2" aria-label="STEP Digital home">
               {/* Mobile: Icon only */}
@@ -82,7 +82,7 @@ const Header = () => {
             </a>
           </motion.div>
 
-          {/* Desktop Navigation - iOS Style Glass Container */}
+          {/* Desktop Navigation - iOS Style Glass Container (Centered) */}
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
