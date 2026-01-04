@@ -82,12 +82,12 @@ const Header = () => {
             </a>
           </motion.div>
 
-          {/* Desktop Navigation */}
+          {/* Desktop Navigation - iOS Style Glass Container */}
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="hidden lg:flex items-center space-x-8"
+            className="hidden lg:flex items-center gap-2 bg-white/80 backdrop-blur-xl rounded-full px-6 py-3 shadow-lg border border-white/40"
           >
             {navLinks.map((link, index) => (
               <motion.a
@@ -100,24 +100,16 @@ const Header = () => {
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.1 * index }}
-                className="text-gray-600 hover:text-primary transition-colors duration-300 font-medium"
+                className="px-4 py-2 text-primary hover:text-accent hover:bg-accent/10 transition-all duration-300 font-semibold rounded-full"
               >
                 {link.name}
               </motion.a>
             ))}
-          </motion.div>
-
-          {/* Auth Buttons */}
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-            className="hidden lg:flex items-center space-x-4"
-          >
-            <button className="px-4 py-2 text-primary hover:text-primary-dark transition-colors duration-300 font-medium">
+            <div className="w-px h-6 bg-gray-300 mx-2"></div>
+            <button className="px-4 py-2 text-primary hover:text-accent hover:bg-accent/10 transition-all duration-300 font-semibold rounded-full">
               Login
             </button>
-            <button className="px-6 py-2 bg-gradient-primary text-white rounded-lg hover:shadow-lg transform hover:scale-105 transition-all duration-300 font-medium">
+            <button className="px-6 py-2 bg-accent text-primary text-sm font-bold rounded-full hover:bg-accent-dark hover:shadow-glow transform hover:scale-105 transition-all duration-300">
               Sign Up
             </button>
           </motion.div>
