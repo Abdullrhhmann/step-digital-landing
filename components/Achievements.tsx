@@ -97,8 +97,9 @@ const Counter = ({
         duration: 2,
         ease: "easeOut",
       });
-      return controls.stop;
+      return () => controls.stop();
     }
+    return undefined;
   }, [isInView, count, value]);
 
   return (

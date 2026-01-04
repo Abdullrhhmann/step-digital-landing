@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -17,7 +17,11 @@ export const metadata: Metadata = {
     title: "STEP Digital - Complete Digital Solutions",
     description: "Transform your business with integrated digital solutions",
   },
-  viewport: "width=device-width, initial-scale=1",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
   themeColor: "#0046A8",
 };
 
