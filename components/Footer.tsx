@@ -50,10 +50,11 @@ const Footer = () => {
             transition={{ duration: 0.6 }}
           >
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">S</span>
-              </div>
-              <span className="text-xl font-bold">STEP Digital</span>
+              <img 
+                src="/logo-wordmark.svg" 
+                alt="STEP Digital Logo" 
+                className="h-10"
+              />
             </div>
             <p className="text-white/70 mb-6 leading-relaxed">
               Your complete digital partner for business growth. One team, one
@@ -65,7 +66,7 @@ const Footer = () => {
                   key={index}
                   href={social.href}
                   aria-label={social.label}
-                  className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary hover:scale-110 transition-all duration-300"
+                  className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent hover:scale-110 transition-all duration-300"
                 >
                   <social.icon className="w-5 h-5" />
                 </a>

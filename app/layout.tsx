@@ -6,16 +6,23 @@ export const metadata: Metadata = {
   description: "One Digital Partner. One Complete System. One Goal: Real Business Growth. Integrated digital solutions including web development, mobile apps, business systems, and digital marketing.",
   keywords: ["digital solutions", "web development", "mobile apps", "digital marketing", "business systems", "STEP Digital"],
   authors: [{ name: "STEP Digital" }],
+  icons: {
+    icon: '/logo-icon.svg',
+    shortcut: '/logo-icon.svg',
+    apple: '/logo-icon.svg',
+  },
   openGraph: {
     title: "STEP Digital - Complete Digital Solutions",
     description: "Transform your business with integrated digital solutions",
     type: "website",
     locale: "en_US",
+    images: ['/logo-wordmark.svg'],
   },
   twitter: {
     card: "summary_large_image",
     title: "STEP Digital - Complete Digital Solutions",
     description: "Transform your business with integrated digital solutions",
+    images: ['/logo-wordmark.svg'],
   },
 };
 
