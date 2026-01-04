@@ -12,7 +12,7 @@ const Introduction = () => {
     <section
       id="introduction"
       ref={ref}
-      className="py-20 md:py-32 bg-white"
+      className="py-20 md:py-32 bg-[#F0F5FF]"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div

@@ -15,36 +15,32 @@ const Differentiators = () => {
       title: "One Partner",
       description:
         "Single point of contact for all your digital needs. No more juggling multiple vendors.",
-      color: "from-blue-500 to-blue-600",
-      bgColor: "bg-blue-50",
-      iconColor: "text-blue-600",
+      bgColor: "bg-primary",
+      iconColor: "text-accent",
     },
     {
       icon: Package,
       title: "Complete System",
       description:
         "Fully integrated solutions that work together seamlessly for maximum impact.",
-      color: "from-purple-500 to-purple-600",
-      bgColor: "bg-purple-50",
-      iconColor: "text-purple-600",
+      bgColor: "bg-accent",
+      iconColor: "text-primary",
     },
     {
       icon: TrendingUp,
       title: "Proven Results",
       description:
         "Track record of delivering measurable business growth for our clients.",
-      color: "from-green-500 to-green-600",
-      bgColor: "bg-green-50",
-      iconColor: "text-green-600",
+      bgColor: "bg-primary",
+      iconColor: "text-accent",
     },
     {
       icon: Headphones,
       title: "Premium Support",
       description:
         "24/7 dedicated support team ready to help you succeed every step of the way.",
-      color: "from-orange-500 to-orange-600",
-      bgColor: "bg-orange-50",
-      iconColor: "text-orange-600",
+      bgColor: "bg-accent",
+      iconColor: "text-primary",
     },
   ];
 
@@ -76,7 +72,7 @@ const Differentiators = () => {
                 y: -8,
                 transition: { duration: 0.3 },
               }}
-              className="bg-white rounded-2xl p-6 shadow-card hover:shadow-card-hover transition-all duration-300 border border-gray-100"
+              className="bg-white rounded-2xl p-6 shadow-card hover:shadow-yellow transition-all duration-300 border border-primary/20"
             >
               <div
                 className={`w-16 h-16 ${item.bgColor} rounded-2xl flex items-center justify-center mb-4`}

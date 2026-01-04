@@ -37,7 +37,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <section ref={ref} className="py-20 md:py-32 bg-gray-50">
+    <section ref={ref} className="py-20 md:py-32 bg-[#F0F5FF]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           className="text-center mb-16"
@@ -64,7 +64,7 @@ const Testimonials = () => {
                 y: -8,
                 transition: { duration: 0.3 },
               }}
-              className="bg-white rounded-2xl p-8 shadow-card hover:shadow-card-hover transition-all duration-300 border border-gray-100"
+              className="bg-white rounded-2xl p-8 shadow-card hover:shadow-card-hover transition-all duration-300 border border-primary/10"
             >
               {/* Star Rating */}
               <div className="flex space-x-1 mb-4">
