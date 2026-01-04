@@ -13,11 +13,12 @@ const config: Config = {
         primary: {
           DEFAULT: "#0046A8",
           dark: "#003380",
-          light: "#3D7ACC",
+          light: "#E8F0FE",
         },
         accent: {
           DEFAULT: "#FFD700",
           dark: "#E5C100",
+          light: "#FFF9E6",
         },
         gray: {
           50: "#F9FAFB",

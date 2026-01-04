@@ -49,7 +49,7 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" ref={ref} className="py-20 md:py-32 bg-gray-50">
+    <section id="services" ref={ref} className="py-20 md:py-32 bg-primary">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           className="text-center mb-16"
@@ -57,10 +57,10 @@ const Services = () => {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            Our <span className="text-gradient">Services</span>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
+            Our <span className="text-accent">Services</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-white/90 max-w-3xl mx-auto">
             Comprehensive digital solutions to power your business growth
           </p>
         </motion.div>
@@ -82,8 +82,8 @@ const Services = () => {
                   rotateY: 5,
                   transition: { duration: 0.3 },
                 }}
-                className={`transform-style-preserve-3d bg-white rounded-2xl p-8 shadow-card hover:shadow-card-hover transition-all duration-300 border border-gray-100 h-full relative overflow-hidden ${
-                  hoveredIndex === index ? "ring-2 ring-primary/20" : ""
+                className={`transform-style-preserve-3d bg-white rounded-2xl p-8 shadow-card hover:shadow-card-hover transition-all duration-300 border h-full relative overflow-hidden ${
+                  hoveredIndex === index ? "border-accent ring-2 ring-accent/20" : "border-gray-100"
                 }`}
               >
                 {/* Gradient Overlay on Hover */}
@@ -95,10 +95,8 @@ const Services = () => {
                 />
 
                 <div className="relative z-10">
-                  <div
-                    className={`w-16 h-16 bg-gradient-to-br ${service.gradient} rounded-2xl flex items-center justify-center mb-6 shadow-lg`}
-                  >
-                    <service.icon className="w-8 h-8 text-white" />
+                  <div className="w-16 h-16 bg-accent rounded-2xl flex items-center justify-center mb-6 shadow-lg">
+                    <service.icon className="w-8 h-8 text-primary" />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-3">
                     {service.title}

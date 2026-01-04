@@ -46,7 +46,7 @@ const ProblemSolution = () => {
   ];
 
   return (
-    <section ref={ref} className="py-20 md:py-32 bg-gray-50">
+    <section ref={ref} className="py-20 md:py-32 bg-[#E8F0FE]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.h2
           className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-gray-900 mb-16"
@@ -65,7 +65,7 @@ const ProblemSolution = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="space-y-6"
           >
-            <h3 className="text-2xl md:text-3xl font-bold text-red-600 mb-8">
+            <h3 className="text-2xl md:text-3xl font-bold text-primary mb-8">
               The Problem
             </h3>
             {problems.map((problem, index) => (
@@ -76,12 +76,12 @@ const ProblemSolution = () => {
                   isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }
                 }
                 transition={{ duration: 0.6, delay: 0.3 + index * 0.1 }}
-                className="glass p-6 rounded-2xl hover:shadow-card-hover transition-all duration-300"
+                className="glass-blue p-6 rounded-2xl hover:shadow-card-hover transition-all duration-300"
               >
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0">
-                    <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center">
-                      <problem.icon className="w-6 h-6 text-red-600" />
+                    <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                      <problem.icon className="w-6 h-6 text-primary" />
                     </div>
                   </div>
                   <div>
@@ -102,7 +102,7 @@ const ProblemSolution = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="space-y-6"
           >
-            <h3 className="text-2xl md:text-3xl font-bold text-green-600 mb-8">
+            <h3 className="text-2xl md:text-3xl font-bold text-accent-dark mb-8">
               Our Solution
             </h3>
             {solutions.map((solution, index) => (
@@ -111,12 +111,12 @@ const ProblemSolution = () => {
                 initial={{ opacity: 0, x: 50 }}
                 animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
                 transition={{ duration: 0.6, delay: 0.3 + index * 0.1 }}
-                className="glass p-6 rounded-2xl hover:shadow-card-hover transition-all duration-300"
+                className="glass-blue p-6 rounded-2xl hover:shadow-card-hover transition-all duration-300"
               >
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0">
-                    <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
-                      <solution.icon className="w-6 h-6 text-green-600" />
+                    <div className="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center">
+                      <solution.icon className="w-6 h-6 text-accent-dark" />
                     </div>
                   </div>
                   <div>

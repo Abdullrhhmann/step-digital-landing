@@ -15,27 +15,24 @@ const Industries = () => {
       title: "Restaurants",
       description:
         "Digital solutions that increase orders, streamline operations, and build customer loyalty for restaurants and food businesses.",
-      gradient: "from-orange-500 to-red-500",
-      bgColor: "bg-orange-50",
-      iconColor: "text-orange-600",
+      bgColor: "bg-accent",
+      iconColor: "text-primary",
     },
     {
       icon: Heart,
       title: "Clinics & Healthcare",
       description:
         "Patient-focused digital platforms, booking systems, and marketing solutions for healthcare providers and clinics.",
-      gradient: "from-red-500 to-pink-500",
-      bgColor: "bg-red-50",
-      iconColor: "text-red-600",
+      bgColor: "bg-primary",
+      iconColor: "text-accent",
     },
     {
       icon: Rocket,
       title: "Startups",
       description:
         "Complete digital infrastructure from MVP to scale. We help startups launch fast and grow faster.",
-      gradient: "from-purple-500 to-indigo-500",
-      bgColor: "bg-purple-50",
-      iconColor: "text-purple-600",
+      bgColor: "bg-accent",
+      iconColor: "text-primary",
     },
   ];
 
@@ -67,7 +64,7 @@ const Industries = () => {
                 y: -8,
                 transition: { duration: 0.3 },
               }}
-              className="bg-white rounded-2xl p-8 shadow-card hover:shadow-card-hover transition-all duration-300 border border-gray-100 group"
+              className="bg-white rounded-2xl p-8 shadow-card hover:shadow-yellow transition-all duration-300 border border-gray-100 hover:border-accent group"
             >
               <div
                 className={`w-16 h-16 ${industry.bgColor} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}
