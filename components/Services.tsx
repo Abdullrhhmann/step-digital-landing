@@ -74,7 +74,7 @@ const Services = () => {
               transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }}
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
-              className="[perspective:1000px]"
+              className="perspective-1000"
             >
               <motion.div
                 whileHover={{
@@ -82,7 +82,7 @@ const Services = () => {
                   rotateY: 5,
                   transition: { duration: 0.3 },
                 }}
-                className={`[transform-style:preserve-3d] bg-white rounded-2xl p-8 shadow-card hover:shadow-card-hover transition-all duration-300 border border-gray-100 h-full relative overflow-hidden ${
+                className={`transform-style-preserve-3d bg-white rounded-2xl p-8 shadow-card hover:shadow-card-hover transition-all duration-300 border border-gray-100 h-full relative overflow-hidden ${
                   hoveredIndex === index ? "ring-2 ring-primary/20" : ""
                 }`}
               >

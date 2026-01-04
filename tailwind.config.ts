@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import plugin from "tailwindcss/plugin";
 
 const config: Config = {
   content: [
@@ -48,12 +49,6 @@ const config: Config = {
       backdropBlur: {
         xs: "2px",
       },
-      transformStyle: {
-        "preserve-3d": "preserve-3d",
-      },
-      perspective: {
-        "1000": "1000px",
-      },
       animation: {
         "fade-in": "fadeIn 0.6s ease-out",
         "slide-up": "slideUp 0.6s ease-out",
@@ -86,7 +81,18 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addUtilities }) {
+      addUtilities({
+        ".perspective-1000": {
+          perspective: "1000px",
+        },
+        ".transform-style-preserve-3d": {
+          "transform-style": "preserve-3d",
+        },
+      });
+    }),
+  ],
 };
 
 export default config;
